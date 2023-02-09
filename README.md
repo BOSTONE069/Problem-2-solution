@@ -1,1 +1,3 @@
 # Problem-2-solution
+
+This solution uses dynamic programming to solve the problem. The dp list keeps track of the maximum number of 'A's that can be printed for a given number of key presses N. The first for loop updates the maximum number of 'A's that can be printed for each value of N by either pressing the Key 1 (A) or by pasting the buffer obtained by pressing Key 3 (Ctrl-C) and Key 4 (Ctrl-V). The inner loop computes the maximum number of 'A's that can be printed by pasting the buffer j times. The final result is stored in dp[N].
